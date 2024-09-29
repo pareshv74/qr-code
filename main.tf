@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1" # Change this to your desired region
+  region = "ap-south-1" # Change this to your desired region
 }
 
 # S3 bucket
@@ -20,7 +20,7 @@ resource "aws_lambda_function" "my_lambda" {
   s3_key           = aws_s3_bucket_object.lambda_zip.key
 
   # Use an existing IAM role
-  role = "arn:aws:iam::871740193993:role/service-role/trigger" # Change this to your existing IAM role ARN
+  role = "arn:aws:iam::008971660212:role/service-role/serverless-role-ror8flbr" # Change this to your existing IAM role ARN
 
   environment {
     variables = {
