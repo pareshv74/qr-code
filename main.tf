@@ -4,13 +4,13 @@ provider "aws" {
 
 # S3 bucket
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "qr-code-generator7321"
+  bucket = "qr-code-generator732111"
 #   acl    = "public-read"
 }
 
 # Lambda function
 resource "aws_lambda_function" "my_lambda" {
-  function_name    = "qr-code-generator7321"
+  function_name    = "qr-code-generator732111"
   handler          = "lambda_function.lambda_handler"
   runtime          = "python3.12"
   memory_size      = 128
